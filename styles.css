@@ -128,6 +128,10 @@ button {
 }
 
 .info__item1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   box-sizing: border-box;
   position: absolute;
   width: 168px;
@@ -140,10 +144,10 @@ button {
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 15px;
 }
-.info-item__header1 {
+/* .info-item__header1 {
   padding: 37px 64px 0px 60px;
   margin: 0;
-}
+} */
 
 .item-info__title1 {
   font-style: normal;
@@ -152,7 +156,8 @@ button {
   line-height: 29px;
   /* identical to box height */
   color: #6533ff;
-  margin: 10px 37px 0px 41px;
+  margin: 0;
+  /* margin: 10px 37px 0px 41px; */
 }
 .item-info__text1 {
   width: 115px;
@@ -166,7 +171,8 @@ button {
   line-height: 21px;
   /* identical to box height */
   color: #6533ff;
-  margin: 0px 26px 40px 27px;
+  margin: 0;
+  /* margin: 0px 26px 40px 27px; */
 }
 
 .info__item2 {
