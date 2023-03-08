@@ -17,9 +17,246 @@ ul li {
 
 body {
   margin: 0;
+  font-family: "Lato";
+  color: #ffffff;
 }
 
 button {
   border: none;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  width: 1440px;
+  height: 0;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+.header__logo {
+  display: flex;
+  position: absolute;
+  width: 122px;
+  height: 65px;
+  left: 200px;
+  top: 41px;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 0px;
+  left: 651px;
+  padding-top: 45px;
+  color: #ffffff;
+}
+
+.header__page + .header__page {
+  padding-left: 67px;
+}
+.header__page {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.home__page {
+  display: flex;
+  justify-content: center;
+  height: 989px;
+  width: 1440px;
+  background-repeat: no-repeat;
+  background-image: url(/img/Background\ header.jpg);
+}
+
+/*==================main==================================== */
+.main__title {
+  position: absolute;
+  width: 449px;
+  height: 154px;
+  left: 720px;
+  top: 225px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+}
+
+.main__description {
+  display: column;
+  position: absolute;
+  width: 448px;
+  height: 66px;
+  left: 720px;
+  top: 400px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.description {
+}
+
+.links__about {
+  margin-top: 52px;
+}
+.link__play {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 723px;
+  top: 518px;
+  margin-top: 52px;
+}
+
+.link__more {
+  position: absolute;
+  width: 75px;
+  height: 17px;
+  left: 781px;
+  top: 532px;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.info__item1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 168px;
+  height: 183px;
+  left: 321px;
+  top: 675px;
+  background: #ffffff;
+  border: 1px solid #794bff;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+}
+.info-item__header1 {
+  padding: 37px 64px 0px 60px;
+  margin: 0;
+}
+
+.item-info__title1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #6533ff;
+  margin: 10px 37px 0px 41px;
+}
+.item-info__text1 {
+  width: 115px;
+  height: 21px;
+  left: 348px;
+  top: 797px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #6533ff;
+  margin: 0px 26px 40px 27px;
+}
+
+.info__item2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 168px;
+  height: 183px;
+  left: 636px;
+  top: 675px;
+  background: #ffffff;
+  border: 1px solid #794bff;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+}
+.info-item__header2 {
+  width: 50px;
+  height: 50px;
+  left: 698px;
+  top: 708px;
+  padding: 33px 56px 0px 58px;
+  margin: 0;
+}
+.item-info__title2 {
+  width: 109px;
+  height: 29px;
+  left: 668px;
+  top: 768px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #6533ff;
+  padding: 10px 37px 0px 41px;
+}
+.item-info__text2 {
+  width: 72px;
+  height: 21px;
+  left: 687px;
+  top: 797px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6533ff;
+  padding: 0px 45px 40px 51px;
+  margin-top: -20px;
+}
+
+.info__item3 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 168px;
+  height: 183px;
+  left: 951px;
+  top: 675px;
+
+  background: #ffffff;
+  border: 1px solid #794bff;
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 15px;
+}
+.info-item__header3 {
+  padding: 37px 64px 0px 60px;
+  margin: 0;
+}
+.item-info__title3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #6533ff;
+  margin: 10px 53px 0px 65px;
+}
+.item-info__text3 {
+  width: 115px;
+  height: 21px;
+  left: 348px;
+  top: 797px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #6533ff;
+  margin: 0px 42px 40px 48px;
+}
