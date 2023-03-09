@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="myscripts.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,12 +19,29 @@
       <div class="header__logo">
         <a href="#"><img src="/img/logo 1.svg" alt="" /></a>
       </div>
-      <ul class="header__container">
+      <ul>
         <li>
-          <a href="#" class="header__page">Courses</a>
-          <a href="#" class="header__page">Platforms</a>
-          <a href="#" class="header__page">Resorces</a>
-          <a href="#" class="header__page">About</a>
+          <div class="navbar">
+            <a href="#home">About</a>
+
+            <a href="#news">News</a>
+            <a href="#news">News</a>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Courses
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Deutsch</a>
+                <a href="#">Ukrainian</a>
+                <a href="#">Polska</a>
+              </div>
+            </div>
+            <a href="#news">Contacts</a>
+            <a href="" class="header-button"> <img src="/img/call-black.svg" alt="">+44 7862126512</a>
+            <a href="" class="header-button button_dark">Talk to Us</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -51,7 +69,7 @@
         <h5 class="item-info__text1">Hours content</h5>
       </article>
 
-       <article class="info__item2">
+      <article class="info__item2">
         <div class="info-item__header2">
           <img src="/img/el_group.svg" alt="" />
         </div>
@@ -59,14 +77,26 @@
         <h5 class="item-info__text2">Students</h5>
       </article>
 
-       <article class="info__item3">
+      <article class="info__item3">
         <div class="info-item__header3">
           <img src="/img/emojione-monotone_globe-showing-americas.svg" alt="" />
         </div>
         <h4 class="item-info__title3">60+</h4>
         <h5 class="item-info__text3">Countries</h5>
       </article>
-     
     </section>
+
+    <div class="subscribe email">Subscribe To Newsletter</div>
+    <div class="email">
+      <input type="email" placeholder="Enter Email" class="email" />
+      <button type="submit">
+        <img
+          src="https://i.ibb.co/CW5Wvry/buttonpng.png"
+          class="img-email"
+          alt="buttonpng"
+          border="0"
+        />
+      </button>
+    </div>
   </body>
 </html>

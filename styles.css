@@ -42,24 +42,16 @@ button {
   left: 200px;
   top: 41px;
 }
-.header__container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 0px;
-  left: 651px;
-  padding-top: 45px;
-  color: #ffffff;
-}
 
 .header__page + .header__page {
-  padding-left: 67px;
+  padding-left: 27px;
 }
 .header__page {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   color: #ffffff;
+  padding-right: 45px;
 }
 
 .home__page {
@@ -265,4 +257,144 @@ button {
   /* identical to box height */
   color: #6533ff;
   margin: 0px 42px 40px 48px;
+}
+
+/* ============== BUTTONS =================== */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-button {
+  display: flex;
+  text-align: center;
+  padding: 16px 30px;
+  background-color: #f9efef; 
+  border-radius: 10px;
+  border: 2px solid rgb(59, 4, 104);
+  /* box-shadow: 0px 0px 10px rgba(20, 3, 42, 0.2); */
+  color: #000;
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease 0s;
+  line-height: 1.43; /* 22/14 */
+}
+.button_dark {
+  background: #fff;
+  color: #314de4;
+  margin-left: 5px;
+}
+
+.img__call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  
+}
+
+/* =============Subscribe=================== */
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  transition: transform 0.7s ease-in-out;
+  margin-left: 10px;
+}
+button:hover {
+  transform: rotate(360deg);
+}
+.img-email {
+  width: 70px;
+  height: 70px;
+}
+input[type="email"] {
+  padding: 10px;
+  border: 2px solid #314de4;
+  outline: none;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #314de4;
+}
+
+.subscribe {
+  font-size: 60px;
+  color: #314de4;
+  font-family: Arial;
 }
