@@ -16,302 +16,102 @@ ul li {
 }
 
 body {
+  width: 1500px;
   margin: 0;
-  font-family: "Lato";
   color: #ffffff;
+  font-family: "Inter"
 }
 
-button {
-  border: none;
-}
 
-.header {
+/* === header ============================================================= */
+.header{
   display: flex;
+  position: absolute;
+  flex-direction: space-between;
   justify-content: center;
-  width: 1440px;
-  height: 0;
-  background-repeat: no-repeat;
+  align-items: center;
+  margin: 0;
+
+}
+.header__container-left{
   margin: 0;
   padding: 0;
 }
-.header__logo {
+.header__logo{
   display: flex;
   position: absolute;
-  width: 122px;
-  height: 65px;
-  left: 200px;
-  top: 41px;
-}
-
-.header__page + .header__page {
-  padding-left: 27px;
-}
-.header__page {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: #ffffff;
-  padding-right: 45px;
-}
-
-.home__page {
-  display: flex;
+  align-items: center;
   justify-content: center;
-  height: 989px;
-  width: 1440px;
-  background-repeat: no-repeat;
-  background-image: url(/img/Background\ header.jpg);
-}
+  width: 160px;
+  height: 0px;
+  margin-left: 25px;
 
-/*==================main==================================== */
-.main__title {
+
+}
+.header__logo-link{
+  display: flex;
   position: absolute;
-  width: 449px;
-  height: 154px;
-  left: 720px;
-  top: 225px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 77px;
-}
-
-.main__description {
-  display: column;
-  position: absolute;
-  width: 448px;
-  height: 66px;
-  left: 720px;
-  top: 400px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.description {
-}
-
-.links__about {
-  margin-top: 52px;
-}
-.link__play {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  left: 723px;
-  top: 518px;
-  margin-top: 52px;
-}
-
-.link__more {
-  position: absolute;
-  width: 75px;
-  height: 17px;
-  left: 781px;
-  top: 532px;
-  margin-top: 50px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  padding: 0px 16px;
+  font-family: "Inter";
+  font-size: 35px;
+  font-weight: 600;
   text-decoration: underline;
 }
 
-.info__item1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: absolute;
-  width: 168px;
-  height: 183px;
-  left: 321px;
-  top: 675px;
-  background: #ffffff;
-  border: 1px solid #794bff;
-  backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 15px;
-}
-/* .info-item__header1 {
-  padding: 37px 64px 0px 60px;
-  margin: 0;
-} */
+/* ===dropdown================ */
 
-.item-info__title1 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-  color: #6533ff;
-  margin: 0;
-  /* margin: 10px 37px 0px 41px; */
-}
-.item-info__text1 {
-  width: 115px;
-  height: 21px;
-  left: 348px;
-  top: 797px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
-  color: #6533ff;
-  margin: 0;
-  /* margin: 0px 26px 40px 27px; */
-}
-
-.info__item2 {
-  box-sizing: border-box;
-  position: absolute;
-  width: 168px;
-  height: 183px;
-  left: 636px;
-  top: 675px;
-  background: #ffffff;
-  border: 1px solid #794bff;
-  backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 15px;
-}
-.info-item__header2 {
-  width: 50px;
-  height: 50px;
-  left: 698px;
-  top: 708px;
-  padding: 33px 56px 0px 58px;
-  margin: 0;
-}
-.item-info__title2 {
-  width: 109px;
-  height: 29px;
-  left: 668px;
-  top: 768px;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  color: #6533ff;
-  padding: 10px 37px 0px 41px;
-}
-.item-info__text2 {
-  width: 72px;
-  height: 21px;
-  left: 687px;
-  top: 797px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #6533ff;
-  padding: 0px 45px 40px 51px;
-  margin-top: -20px;
-}
-
-.info__item3 {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 168px;
-  height: 183px;
-  left: 951px;
-  top: 675px;
-
-  background: #ffffff;
-  border: 1px solid #794bff;
-  backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  border-radius: 15px;
-}
-.info-item__header3 {
-  padding: 37px 64px 0px 60px;
-  margin: 0;
-}
-.item-info__title3 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-  color: #6533ff;
-  margin: 10px 53px 0px 65px;
-}
-.item-info__text3 {
-  width: 115px;
-  height: 21px;
-  left: 348px;
-  top: 797px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
-  color: #6533ff;
-  margin: 0px 42px 40px 48px;
-}
-
-/* ============== BUTTONS =================== */
-/* Navbar container */
 .navbar {
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+  background-color: #fff;
+  margin-left: 0px;
 }
 
-/* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 16px;
-  color: white;
+  font-size: 26px;
+  font-weight: normal;
+  color: rgb(7, 6, 6);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 26px;  
   border: none;
   outline: none;
-  color: white;
+  color: rgb(8, 4, 4);
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: "Inter";
+  width: 160px;
+  margin: 0;
 }
 
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(207, 224, 253);
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #fff;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   color: black;
@@ -321,80 +121,84 @@ button {
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(205, 228, 254);
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.header-button {
+/* === search input======================= */
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 4px;
   display: flex;
-  text-align: center;
-  padding: 16px 30px;
-  background-color: #f9efef; 
-  border-radius: 10px;
-  border: 2px solid rgb(59, 4, 104);
-  /* box-shadow: 0px 0px 10px rgba(20, 3, 42, 0.2); */
-  color: #000;
-  letter-spacing: 0px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: background-color 0.3s ease 0s;
-  line-height: 1.43; /* 22/14 */
-}
-.button_dark {
-  background: #fff;
-  color: #314de4;
-  margin-left: 5px;
+  align-items: start;
 }
 
-.img__call {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 18px;
-  height: 18px;
-  margin-right: 5px;
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 25px;
+
+  font-size: 26px;
   
 }
 
-/* =============Subscribe=================== */
-.email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-}
-button {
-  border: none;
-  cursor: pointer;
-  appearance: none;
-  background-color: inherit;
-  transition: transform 0.7s ease-in-out;
-  margin-left: 10px;
-}
-button:hover {
-  transform: rotate(360deg);
-}
-.img-email {
-  width: 70px;
-  height: 70px;
-}
-input[type="email"] {
-  padding: 10px;
-  border: 2px solid #314de4;
-  outline: none;
-  border-radius: 5px;
-  font-size: 24px;
-  color: #314de4;
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+   .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 4px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
 
-.subscribe {
-  font-size: 60px;
-  color: #314de4;
-  font-family: Arial;
+/* ===== header buttons ===================================*/
+.header__actions{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+}
+.button__login{
+  background-color: #fff;
+}
+.button{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  font-family: "Inter";
+  font-size: 26px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+
+}
+.button__signup{
+  background-color: rgb(255, 231, 15);
+  color: #000;
+
 }
