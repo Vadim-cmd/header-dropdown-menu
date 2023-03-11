@@ -16,53 +16,60 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="myscripts.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="header">
-      <div class="header__container-left">
-        <div class="header__logo">
-          <a href="" class="header__logo-link">Ksenia Wisdom</a>
+      <div class="header__logo">
+        <a href="#"><img src="/img/2.png" alt="" /></a>
+      </div>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Courses
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Private Lessons</a>
+            <a href="#">Video Course</a>
+            <a href="#">Speaking club</a>
+          </div>
         </div>
-        <div class="navbar">
-          <a href="#home">About</a>
-          <a href="#news">Reviews</a>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Languages
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Pricing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Courses</a>
+            <a href="#">Books</a>
+            <a href="#">Tests</a>
+            <a href="#">Subscription</a>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">
-              Pricing
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Company
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Contacts</a>
           </div>
-
-
-          <a href="#home">Career</a>
-          <a href="#news">Contact</a>
-          <div class="topnav">
-            <input type="text" placeholder="Search.." />
-          </div>
-          
         </div>
       </div>
+
       <div class="header__actions">
         <button class="button__login button">Login</button>
-        <button class="button__signup button">Sign Up</button>
+        <button class="button__signup button">Get Started</button>
+      </div>
+
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
     </div>
   </body>
